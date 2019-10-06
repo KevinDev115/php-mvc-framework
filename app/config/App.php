@@ -4,33 +4,22 @@
 |
 | Kevin.Galindo - galindok829@gmail.com
 | 
-| Este archivo contiene las variables globales de todo el aplicativo
-| alguna de ellas son utilizadas para especificar ciertas tareas y po ende si son modificadas 
-| pueden afectar el funcionamiento del aplicativo.
+| En este apartado se agregan las Variables Globales referentes 
+| a la aplicación en general como el nombre, versión, estado en producción, etc...
 |
 */
 
-/**
- * Nombre del aplicativo
-*/
-define('APP_NAME','php-mvc-template');
+#Nombre del aplicativo.
+define('APP_NAME','php-mvc-framework');
 
-/**
- * Version del aplicativo
-*/
+#Version del aplicativo.
 define('APP_VERSION','v1');
 
-/**
- * Footer del aplicativo
-*/
+#Footer del aplicativo.
 define('APP_COPYRIGHT','@Kevin Galindo - '.date('Y'));
 
-/**
- * Estado del aplicativo en produccion
-*/
+#Estado del aplicativo en produccion.
 define('APP_PRODUCTION',false);
 
-/**
- * Intentos de logeo del usuario
-*/
+#Intentos de logeo del usuario.
 define('APP_USER_TRY_LOGIN',3);

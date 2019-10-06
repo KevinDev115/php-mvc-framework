@@ -9,8 +9,6 @@
 |
 */
 
-/**
- * Peso maximo por archivo.
-*/
+#Peso maximo por archivo.
 define('MAX_UPLOAD_SIZE','500000'); 
 

@@ -9,16 +9,9 @@
 |
 */
 
-/**
- * Ruta del proyecto en el servidor.
-*/
-define('APP_PATH_DIR', dirname(dirname(dirname(__FILE__)))); 
+#Ruta de aplicativo
 
-/**
- * Ruta de aplicativo
-*/
-
-#Se valida si el aplicativo esta en produccion
+//Se valida si el aplicativo esta en produccion
 if (APP_PRODUCTION) {
     error_reporting(0);
     define('APP_PROTOCOL', 'https'); #PROTOCOLO
@@ -31,10 +24,11 @@ if (APP_PRODUCTION) {
     define('APP_PORT', '80');         #PUERTOS DEL SERVIDOR
 }
 
-#Define la ruta del aplicativo
+#Define la ruta del aplicativo para la llamada de recursos.
 define('APP_URL_ASSETS', APP_PROTOCOL.'://'.APP_DOMAIN.':'.APP_PORT.'/'.APP_NAME.'/assests');   #URL DEL PROYECTO
 
+#Define la ruta del aplicativo para la llamada de recursos.
+define('APP_URL', APP_PROTOCOL.'://'.APP_DOMAIN.':'.APP_PORT.'/'.APP_NAME);   #URL DEL PROYECTO
 
-
-
-
+#Ruta del proyecto en el servidor.
+define('APP_PATH_DIR', dirname(dirname(dirname(__FILE__)))); 

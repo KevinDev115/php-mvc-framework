@@ -4,8 +4,8 @@
 |
 | Kevin.Galindo - galindok829@gmail.com
 | 
-| Este archivo contiene el auto loader para las clases y treats
-| Que se quieran instanciar.
+| Este apartado contiene el código del AutoLoader para cargar 
+| las dependencias automáticamente cada vez que se realice la instancia a una clase
 |
 */
 
