@@ -4,20 +4,24 @@
 |
 | Kevin.Galindo - galindok829@gmail.com
 |
-| Este archivo se encarga de incluir algunos otros archivos que son 
-| necesarios para el funcionamiento del aplicativo.
+| En este apartado se haran las llamadas de archivos importantes 
+| para el funcionamiento de la aplicacion.
 |
 */
 
+#Ejecutamos esta function para trabajar con las sessiones.
 session_start();
-#/config
-require_once 'config/App.php'; 
-require_once 'config/DataBase.php';
-require_once 'config/File.php';
-require_once 'config/Path.php';
-require_once 'config/AutoLoad.php';
 
-#/libs
+
+#Incluimos todos los archivos de configuracion necesario.
+require_once 'config/app.php'; 
+require_once 'config/database.php';
+require_once 'config/file.php';
+require_once 'config/path.php';
+require_once 'config/autoload.php';
+
+#Incluimos los "Helpers" para utilizarlos en toda la aplicacion. 
 require_once 'helpers/any.php'; 
 
+#Realizamos la instancia a la clase "Core" para iniciar el programa. 
 $ini = new Core();
