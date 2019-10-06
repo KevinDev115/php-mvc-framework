@@ -2,9 +2,9 @@
 
 class NotasModel extends DataBase
 {
-    public function tets()
+    public function all()
     {
-        $sql = 'SELECT * FROM nota';
+        $sql = 'SELECT * FROM notas';
 
         try {
             $this->query($sql);
