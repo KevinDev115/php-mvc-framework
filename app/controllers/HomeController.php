@@ -2,15 +2,12 @@
 
 class Home extends Controller
 {
-    protected $notaModel;
-
     /**
      * 
      */
     public function __construct()
     {
-        #Realizamos la instancia al modelo.
-        $this->notaModel = $this->model('notas');
+        
     }
 
     /**
