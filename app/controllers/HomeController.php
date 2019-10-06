@@ -2,14 +2,26 @@
 
 class Home extends Controller
 {
-    protected $model;
+    protected $notaModel;
+
+    /**
+     * 
+     */
     public function __construct()
     {
-        $this->model = $this->model('notas');
+        #Realizamos la instancia al modelo.
+        $this->notaModel = $this->model('notas');
     }
+
+    /**
+     * @author Kevin Galindo
+     * 
+     */
     public function index()
     {
-        $res = $this->model->tets();
-        $this->view('notas/index', ['notas' => $res]);
+        #llamamos a la vista
+        require_once '../app/views/layouts/header.php';
+        $this->view('home/index');
+        require_once '../app/views/layouts/footer.php';
     }
 }
