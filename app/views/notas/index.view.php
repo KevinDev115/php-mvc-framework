@@ -1,7 +1,4 @@
-
-<h2>Notas: </h2>
-
-<div class="container">
+<div class="container mt-5">
     <div class="row">
         <h2>Notas</h2>
     </div>
@@ -18,7 +15,7 @@
                             <span>Opciones</span>
                         </th>
                         <th class="text-center">
-                            <button class="btn btn-success">ADD</button>
+                            <a href="<?=APP_URL?>/nota/create" class="btn btn-success">Nueva Nota</a>
                         </th>
                     </tr>
                 </thead>
@@ -29,9 +26,9 @@
                         <td><?=$value->contenido?></td>
                         <td><?=$value->fecha_creacion?></td>
                         <td class="text-center" colspan="2">
-                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                <button class="btn btn-secondary">Editar</button>
-                                <button class="btn btn-danger">Eliminar</button>
+                            <div class="btn-group btn-group-toggle">
+                                <a href="<?=APP_URL?>/nota/edit/<?=$value->id?>" class="btn btn-secondary">Editar</a>
+                                <a href="<?=APP_URL?>/nota/destroy/<?=$value->id?>" class="btn btn-danger">Eliminar</a>
                             </div>
                         </td>
                     </tr>
@@ -41,11 +38,3 @@
         </div>
     </div>
 </div>
-
-
-
-<?php
-
-var_dump($data);
-?>
-
