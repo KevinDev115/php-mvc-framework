@@ -10,7 +10,7 @@ Este es un Framework para la creacion aplicaciones y  servicios WEB, diseñado c
 
 ### :bookmark_tabs: ¿Qué ofrece?
 
- - Sistema de rutas. (/controlador/modelo/parametro/parametro)
+ - Sistema de rutas. (/controlador/modelo/parametro/...)
  - Multiples conexiones a Bases de Datos con PDO. 
  - Metodos para el uso de modelos en el  controlador.
  - Metodos para el trabajo con Vistas.
