@@ -22,6 +22,32 @@ Este Framework tiene una gran escalabilidad y flexibilidad para cualquier proyec
 
 ### :wrench: Arquitectura
 
---proximamente--
+![Example MVC](https://www.c-sharpcorner.com/article/mvc-beginners-tutorial-with-bootstrap/Images/image001.png)  
 
-Copyright © 2019 Kevin Galindo 👦
+
+###  🧪 Instalacion
+
+Para que funcione correctamente, necesita instalar los servicios de Apache y Mysql o instalar un servidor local, por ejemplo.
+
+ - [xampp](https://www.apachefriends.org/es/index.html)
+ - [wampserver](https://www.wampserver.com/en/)
+ 
+Una vez lo tenga instalado debe clonar este repositorio en la carpeta del servidor correspondiente:
+
+```console
+> git clone https://github.com/KevinDev115/php-mvc-framework.git
+```
+
+#### ⚙ Configuracion base de datos
+
+Debe ir al archivo "app/config/DataBase.php" y segun la base de datos que este manejando, ya sea Mysql o Oracle debe rellenar las variables globales
+que se utilizaran para las conexiones a bases de datos.
+
+### 🧪 Test  
+
+Para probar que todo esta bien debe ir a la URL `http://localhost/` o `http://127.0.0.1/` y elegir este proyecto.
+
+#### ⚠️ Warning 
+**_Este es un proyecto antiguo que contiene algunas buenas prácticas de desarrollo, pero puede mejorarse considerablemente._**
+
+Copyright © 2020 Kevin Galindo 👦
