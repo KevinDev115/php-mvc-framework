@@ -1,6 +1,6 @@
-<div class="container mt-5">
-    <h2>Actualizar Nota</h2>
-    <form method="POST" action="<?=APP_URL?>/nota/update" class="border p-5 bg-white">
+<div class="container-app">
+    <h2 class="text-white">Actualizar Nota</h2>
+    <form method="POST" action="<?=APP_URL?>/nota/update" class="py-5 text-white">
         <input type="hidden" value="<?=$data['nota']->id?>">
         <div class="form-group row">
             <label for="color" class="col-sm-2 col-form-label">Color</label>

@@ -1,6 +1,6 @@
-<div class="container mt-5">
-    <h2>Crear una Nota</h2>
-    <form method="POST" action="<?=APP_URL?>/nota/store" class="border p-5 bg-white">
+<div class="container-app">
+    <h2 class="text-white">Crear una Nota</h2>
+    <form method="POST" action="<?=APP_URL?>/nota/store" class="py-5 text-white">
         <div class="form-group row">
             <label for="color" class="col-sm-2 col-form-label">Color</label>
             <div class="col-sm-10">

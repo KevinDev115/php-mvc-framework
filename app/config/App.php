@@ -16,7 +16,7 @@ define('APP_NAME','php-mvc-framework');
 define('APP_VERSION','v1');
 
 #Footer del aplicativo.
-define('APP_COPYRIGHT','@Kevin Galindo - '.date('Y'));
+define('APP_COPYRIGHT','@KevinDev115 - <b>'.date('Y').'</b>');
 
 #Estado del aplicativo en produccion.
 define('APP_PRODUCTION',false);

@@ -15,3 +15,14 @@ function var_dump_pro($var)
         echo "</pre>";
     }
 }
+
+/**
+ * Contiene la ruta de assets 
+ * 
+ * @author: Kevin.Galindo
+ * @param: $var String
+ */
+function assets($var)
+{
+	return APP_URL.'/public/assets'.$var;
+}
